@@ -1,0 +1,102 @@
+----------------------HTML----------------------
+
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ABC BLOG POSTING WEBSITE</h1>
+  <p>Feel free to share anything you like with others here</p>
+  <p>Feel free to check on what others is thinking as well</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Log in / Sign up</a>
+  <a href="#">Make a new post</a>
+  <a href="#">Check others latest post</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Subject 01</h2>
+    <p>Content of subject 01 here.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Subject 02</h2>
+    <p>Content of subject 02 here.</p>
+    <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">
+  </div>
+  
+  <div class="column">
+    <h2>Subject 03</h2>
+    <p>Content of subject 03 here.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+----------------------CSS----------------------
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  background-color: lightblue;
+  opacity: 0.9;
+}
